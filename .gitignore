@@ -1,5 +1,6 @@
 # Dependency directories
 node_modules/
 jspm_packages/
-
+ .vscode/
+settings.json
 M04C02-Ejercitación.pdf

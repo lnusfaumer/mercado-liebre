@@ -4,7 +4,7 @@ const path = require('path')
 
 
 app.get('/', function (req, res) {
-    let file = path.resolve('vistas/index.html')
+    let file = path.resolve('views/index.html')
     res.sendFile(file)
 })
 
