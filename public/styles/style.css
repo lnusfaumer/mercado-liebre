@@ -1,6 +1,12 @@
 body {
-      align-items: center;
       font-family: 'Roboto', sans-serif;
+}
+nav ul li{
+      list-style-type: none;
+
+}
+a{
+      text-decoration: none;
 }
 img {
       width: 100%;
@@ -17,6 +23,9 @@ p {
 }
 .precios {
       font-size: 18px;
+}
+.fa-truck{
+      margin-left: 0;
 }
 .descuentos, .descripciones{
       font-size: 16px;
