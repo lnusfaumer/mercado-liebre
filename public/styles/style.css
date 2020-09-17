@@ -10,5 +10,14 @@ img {
       max-width: 800px;
 }
 #ultimas_visitas, #ofertas{
-      font-size: 20px;
+      font-size: 24px;
+}
+p {
+      font-size: 12px;
+}
+.precios {
+      font-size: 18px;
+}
+.descuentos, .descripciones{
+      font-size: 16px;
 }
