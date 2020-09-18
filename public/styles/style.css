@@ -1,5 +1,21 @@
 body {
       font-family: 'Roboto', sans-serif;
+      margin: 0;
+}
+:root {
+      --header-bg-color: #EAC926;
+      --fondos-bordes-bg:#ebebeb;
+      --iconos-truck-desc:#39b54a;
+      --iconos-celeste:#1259c3;
+      --bg-gris-oscuro:#666;
+      --bg-azul:#03264C;
+    }
+    
+
+    /*       HEADER       */
+header{
+      background-color: var(--header-bg-color);
+      padding: 5px;
 }
 nav ul li{
       list-style-type: none;
@@ -15,8 +31,22 @@ img {
 .banner img {
       max-width: 800px;
 }
+
+
+/*       Seccion principal       */
+main{
+      background-color: var(--fondos-bordes-bg);
+      padding: 5px;
+      
+}
+section article img{
+      margin: auto;
+      align-items: center;
+      display: block;
+}
 #ultimas_visitas, #ofertas{
       font-size: 24px;
+      background-color: var(--fondos-bordes-bg);
 }
 p {
       font-size: 12px;
@@ -25,8 +55,25 @@ p {
       font-size: 18px;
 }
 .fa-truck{
-      margin-left: 0;
+      color: var(--iconos-truck-desc);
 }
 .descuentos, .descripciones{
       font-size: 16px;
+}
+.descuentos{
+      color: var(--iconos-truck-desc);
+}
+
+/*       PIE DE PAGINA     */
+footer{
+      text-align: center;
+      padding: 5px;
+}
+.icon-pie {
+      color: var(--iconos-celeste);
+}
+.last-text{
+      margin-top: 25px;
+      margin-bottom: 10px;
+      text-align: left;
 }
