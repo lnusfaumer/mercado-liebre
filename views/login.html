@@ -5,12 +5,13 @@
       <link rel="stylesheet" href="/styles/style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
       <title>Mercado-Liebre</title>
 </head>
 <body>
       <header id="header">
             <div class="search-logo"> 
-                  <a href="/"><img class="w-50" src="/images/logo-mercado-liebre.svg" alt="logo" ></a>                
+                  <a href="/"><img class="w-50" src="./images/logo-mercado-liebre.svg" alt="logo" ></a>                
                   <input class="w-50" type="search" placeholder="Buscar productos, marcas y más... ">
                   <div class="search-icon"><i class="fas fa-search"></i></div>
             </div>
@@ -43,80 +44,18 @@
       <section class="header-banner">
             <img src="./images/img-home-banner.jpg" alt="banner">
       </section>
-
-      <Main>
-            <section class="register-form">
-                <form action="/">
-                  <div>
-                        <label for="nombre"></label>
-                        <input type="text" placeholder="Nombre y apellido">
-                  </div>
-
-                  <div>
-                        <label for="nombre-usuario"></label>
-                        <input type="text" placeholder="Nombre de usuario">
-                  </div>
-
+      <main>
+            <form action="/">
                   <div>
                         <label for="email"></label>
-                        <input type="text" placeholder="E-mail">
+                        <input class="email-input" type="text" placeholder="E-mail">
+                        <label for="clave"></label>
+                        <input class="clave-input" type="text" placeholder="Contraseña">
+                        <button class="enviar-input" type="submit" > Enviar</button>
+                        
                   </div>
-                  <div>
-                        <label class="fecha" for="">Fecha de nacimiento</label>
-                        <input type="date">
-                  </div>
-                  <div>
-                        <label for="domicilio"></label>
-                        <input type="text" placeholder="Domicilio">
-                  </div>
-                  <div class="titulo-perfil">
-                        <p>Perfil del usuario</p>
-
-                        <label for="">Comprador</label>
-                        <input class="comprador" type="radio" name="v-c" value="com">
-
-                        <label for="">Vendedor</label>
-                        <input class="vendedor" type="radio" name="v-c" value="ven">
-                  </div>
-                  <div class="intereses">
-                              <p class="intereses-titulo">Intereses</p>
-
-                              <label for="electro">Electro</label>
-                              <input type="checkbox" name="electro" value="electro">
-
-                              <label for="electro">Moda</label>
-                              <input type="checkbox" name="moda" value="moda">
-
-                              <label for="electro">Hogar</label>
-                              <input type="checkbox" name="hogar" value="hogar">
-
-                              <label for="electro">Jugueteria</label>
-                              <input type="checkbox" name="jugueteria" value="jugueteria"> 
-
-                              <label for="electro">Vida sana</label>
-                              <input type="checkbox" name="moda" value="vida"> 
-                  </div>
-                        <div>
-                              <label for="perfil">Elegi tu foto de usuario</label>
-                        </div>
-                        <input type="file" name="usuario-img" value="usuario-img"> 
-                  <div>
-                        <label for="contraseña"></label>
-                        <input type="text" placeholder="Contraseña">
-                  </div>
-
-                  <div>
-                        <label for="repetir-contraseña"></label>
-                        <input type="text" placeholder="Repetir contraseña">
-                  </div>
-                  <button class="enviar-input" type="submit" > Enviar</button>
-                  <button class="borrar-input" type="reset">Borrar</button>
             </form>
-            </section>
-            
-      </Main>
-
-
+      </main>
       <footer>
             <article>
                   <div><i class="fas fa-credit-card icon-pie"></i></div>
@@ -141,5 +80,5 @@
             </div>         
       </footer>
       
+            
 </body>
-</html>

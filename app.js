@@ -2,16 +2,24 @@ const express = require ('express')
 const app = express()
 const path = require('path')
 
+// root home, register, login
 
 app.get('/', function (req, res) {
     let file = path.resolve('views/index.html')
     res.sendFile(file)
 })
+
 app.get('/register', function (req, res) {
 	let file = path.resolve('views/register.html')
 	res.sendFile(file)
   })
 
+  app.get('/login', function (req, res) {
+	let file = path.resolve('views/login.html')
+	res.sendFile(file)
+  })
+
+	  // Css imagenes formulas
 app.get('*', function(req, res) {
 	if (req.url.endsWith('css')) {
 	    let file = path.resolve('public' + req.url);
