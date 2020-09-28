@@ -8,20 +8,26 @@
       <title>Mercado-Liebre</title>
 </head>
 <body>
-      <header id="header">
-            <div class="search-logo"> 
-                  <a href="/"><img class="w-50" src="/images/logo-mercado-liebre.svg" alt="logo" ></a>                
-                  <input class="w-50" type="search" placeholder="Buscar productos, marcas y más... ">
-                  <div class="search-icon"><i class="fas fa-search"></i></div>
+      <header>
+            <div class="header-logo-search">
+                  <div class="logo-button"> 
+                        <a href="/"><img  src="./images/logo-mercado-liebre.svg" alt="logo" ></a> 
+                  </div>      
+                  <form class="nav-search" action="#">
+                        <input type="search" placeholder="Buscar productos, marcas y más... ">
+                        <div class="search-icon">
+                              <a href="#"><i class="fas fa-search"></i></a>
+                        </i></div>
+                  </form>          
             </div>
-
+                       
             <div class="parrafos-inicio">                 
                   <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
 
             <nav #navegacion>
                   <div class="menu-container">
-                        <div class="nav-botton">
+                        <div class="nav-button">
                               <i class="fas fa-bars"></i>
                         </div>
                         
@@ -44,7 +50,7 @@
             <img src="./images/img-home-banner.jpg" alt="banner">
       </section>
 
-      <Main>
+      <Main class="main-register">
             <section class="register-form">
                 <form action="/">
                   <div>
@@ -111,9 +117,8 @@
                   </div>
                   <button class="enviar-input" type="submit" > Enviar</button>
                   <button class="borrar-input" type="reset">Borrar</button>
-            </form>
-            </section>
-            
+                 </form>
+            </section>    
       </Main>
 
 

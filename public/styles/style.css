@@ -14,7 +14,7 @@ body {
       --iconos-celeste:#1259c3;
       --bg-gris-oscuro:#666;
       --bg-azul:#03264C;
-      --bordes: rgb(118, 118, 118);
+      --bordes: #767676;
     }
     
 
@@ -24,6 +24,11 @@ header{
       padding: 5px;
       min-height: 100px;
 }
+.header-logo-search{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+}
 a{
       text-decoration: none;
       color: black;
@@ -31,20 +36,27 @@ a{
 a:visited{
       color: black;
 }
-.search-logo .w-50{
-      width: 46%;
-      display: inline-block;
+.logo-button{
+      width: 40%;
+}
+.nav-search {
+      display: flex;
+      width: 50%;
+      height: 30px;
+}
+.nav-search input{
+      width: 100%;
 }
 .search-icon {
-      width: 5%;
-      display: inline-block;
+      width: 40px;
+      height: 30px;
       background-color: white;
       text-align: center;
-      height:18px;
       border-radius: 2px;
       padding: 2px;
       border: 1px solid  rgb(118, 118, 118);;
 }
+
 .header-banner img{
       max-width: 100%;
 }
@@ -63,15 +75,15 @@ a:visited{
             text-align: start;
       }
       nav ul li a{
-            margin-right: 3px;
+            margin-right: 6px;
       }
 
       nav .menu-container{
-            display: inline-block;
             width: max-content;
+            display: inline-block;
             margin: 20px 0px;
       }
-      nav .nav-botton{
+      nav .nav-button{
             padding: 2px;
             background-color: #0044AA;
             color: white;
@@ -84,15 +96,15 @@ a:visited{
             padding: 10px;
             border: 1px solid rgb(118, 118, 118);
       }
-      nav .links{
+      nav .links ul{
             display: none;
       }
-      nav .menu-container:hover .nav-botton{
+      nav .nav-button:hover{
             background-color: #0022AA;
             pointer-events: visible;
             cursor: pointer;
       }
-      nav .menu-container:hover .links{
+      nav .menu-container:hover .links ul{
             display: block;
       }
 
@@ -102,18 +114,20 @@ main{
       background-color: var(--fondos-bordes-bg);
       width: 85%;
       margin: auto;
+      margin-bottom: 10%;
 }
 .por-visitas, .por-ofertas{
       font-size: 24px;
       width: 100%;
       text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
 }
 
 section article {
       padding: 15px;
       margin-bottom: 20px;
-      display: inline-block;
-      box-sizing: border-box;
       text-align: center;
       background-color: white;
 }
@@ -121,6 +135,10 @@ section article img{
       width: 100%;
       display: inline-block;
       text-align: center;
+      border-bottom: 0.3px solid var( --bordes);
+}
+.pie-articulo{
+     text-align: start;
 }
 .precios {
       font-size: 18px;
@@ -149,7 +167,17 @@ section article img{
 
 /*   /////////// ///////////    REGISTER    */
 .register-form{
+      width: 100%;
       text-align: center;
+      display: flex;
+      padding: 20px 0px;
+      justify-content: center;
+}
+.register-form form{
+      border: 0.6px solid gainsboro;
+      padding: 10px;
+      border-radius: 13px;
+      box-sizing: border-box;
 }
 .register-form div input{
       width: 100%;
@@ -187,7 +215,16 @@ section article img{
 }
 
 /*   /////////// ///////////    Login ///////////  ///////////     */
-
+.form-login{
+      padding: 20px;
+      border:1px solid gainsboro;
+      border-radius: 13px;
+      height: 600px;
+      margin: 40px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+}
 .email-input, .clave-input{
       width: 100%;
       padding: 10px;
@@ -216,6 +253,7 @@ footer{
 }
 footer article{
       margin: 20px 0px;
+      text-align: start;
 }
 .icon-pie {
       color: var(--iconos-celeste);
@@ -227,10 +265,61 @@ footer article{
 }
 
 
-@media (min-width: 900px){
+@media (min-width: 640px){
+div .nav-button{
+      display: none;
+}
+nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end ;
+}
+nav .menu-container{
+      width: 90%;
+      padding:0px 5% 0px 20%;
+}
+.menu-container .links ul{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      margin: 0;
+}
+.links ul li{
+      border: none;
+}
+.links ul li:hover{
+      font-size: 18px;
+}
+nav .menu-container:hover .links ul{
+      display: flex;
+}
+
+.por-ofertas, .por-visitas{
+      flex-direction: row;
+      justify-content: space-between;
+}
+section article{
+      width: 24%;
+}
+.por-ofertas{
+      margin-bottom: 10px;
+}
+.form-login{
+      max-width: 400px;
+}
+.main-login {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+
 footer article {
       display: inline-block;
       width: 30%;
-}}
+      text-align: start;
+}
+
+}
 
 

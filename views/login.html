@@ -9,20 +9,26 @@
       <title>Mercado-Liebre</title>
 </head>
 <body>
-      <header id="header">
-            <div class="search-logo"> 
-                  <a href="/"><img class="w-50" src="./images/logo-mercado-liebre.svg" alt="logo" ></a>                
-                  <input class="w-50" type="search" placeholder="Buscar productos, marcas y más... ">
-                  <div class="search-icon"><i class="fas fa-search"></i></div>
+      <header>
+            <div class="header-logo-search">
+                  <div class="logo-button"> 
+                        <a href="/"><img  src="./images/logo-mercado-liebre.svg" alt="logo" ></a> 
+                  </div>      
+                  <form class="nav-search" action="#">
+                        <input type="search" placeholder="Buscar productos, marcas y más... ">
+                        <div class="search-icon">
+                              <a href="#"><i class="fas fa-search"></i></a>
+                        </i></div>
+                  </form>          
             </div>
-
+                       
             <div class="parrafos-inicio">                 
                   <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
 
             <nav #navegacion>
                   <div class="menu-container">
-                        <div class="nav-botton">
+                        <div class="nav-button">
                               <i class="fas fa-bars"></i>
                         </div>
                         
@@ -44,15 +50,14 @@
       <section class="header-banner">
             <img src="./images/img-home-banner.jpg" alt="banner">
       </section>
-      <main>
-            <form action="/">
+      <main class="main-login">
+            <form class="form-login" action="/">
                   <div>
                         <label for="email"></label>
                         <input class="email-input" type="text" placeholder="E-mail">
                         <label for="clave"></label>
                         <input class="clave-input" type="text" placeholder="Contraseña">
-                        <button class="enviar-input" type="submit" > Enviar</button>
-                        
+                        <button class="enviar-input" type="submit" > Enviar</button>                    
                   </div>
             </form>
       </main>
