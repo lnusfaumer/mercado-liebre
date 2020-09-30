@@ -28,7 +28,23 @@ header{
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 20px;
+      justify-content: center;
 }
+.logo-button{
+      flex-grow: 5;
+      max-width: 400px;
+}
+.search-input{
+      max-width: 400px;
+}
+.d-flex{
+      display: flex;
+      flex-wrap: wrap;
+}
+.w-grow-1{
+      flex-grow: 1;
+}
+
 a{
       text-decoration: none;
       color: black;
@@ -36,26 +52,27 @@ a{
 a:visited{
       color: black;
 }
-.logo-button{
-      width: 40%;
-}
 .nav-search {
+      border: 1px solid black;
+      background: white;
+
+      justify-content: space-between;
       display: flex;
-      width: 50%;
+      flex-wrap: wrap;
       height: 30px;
+      padding: 3px 5px;
+      max-width: 400px;
 }
-.nav-search input{
-      width: 100%;
+.nav-search input {
+      width: 90%;
+      border: none;
 }
-.search-icon {
-      width: 40px;
-      height: 30px;
-      background-color: white;
-      text-align: center;
-      border-radius: 2px;
-      padding: 2px;
-      border: 1px solid  rgb(118, 118, 118);;
+.search-icon a{
+      align-self: center;
+      position: relative;
+      right: 10px;
 }
+
 
 .header-banner img{
       max-width: 100%;
@@ -110,7 +127,7 @@ a:visited{
 
 
 /*    ///////////    MAIN del Home    ///////////   */
-main{
+.main-home{
       background-color: var(--fondos-bordes-bg);
       width: 85%;
       margin: auto;
@@ -126,29 +143,38 @@ main{
 }
 
 section article {
-      padding: 15px;
       margin-bottom: 20px;
       text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+
       background-color: white;
 }
 section article img{
       width: 100%;
-      display: inline-block;
       text-align: center;
-      border-bottom: 0.3px solid var( --bordes);
 }
 .pie-articulo{
      text-align: start;
+     height: 30%;
+     border-top: 1px solid #ebebeb;;
 }
 .precios {
       font-size: 18px;
 }
 .fa-truck{
       color: var(--iconos-truck-desc);
-      text-align: start;
       border-radius: 50%;
       border:1px solid  var(--iconos-truck-desc);
       padding: 6px;
+      background-color: white;
+      margin-right: 15px;
+}
+.justify-end{
+      justify-content:flex-end;
+      width: 100%;
+      position: relative;
+      bottom: 18px;
 }
 .descuentos, .descripciones{
       font-size: 16px;
@@ -318,6 +344,9 @@ footer article {
       display: inline-block;
       width: 30%;
       text-align: start;
+}
+.nav-search{
+      flex-grow: 3;
 }
 
 }
